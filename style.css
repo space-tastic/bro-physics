@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
+
+#mobile-menu {
+    display: none;
+}
+
+#teachers-data {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: auto;
+}
+
+#teachers-data .teacherCard {
+    transition: all linear 0.1s;
+    display: inline;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#founder-card,
+.video,
+.teamCard{
+    transition: all linear 0.1s;
+}
+
+#teachers-data .teacherCard:hover,
+#founder-card:hover,
+.video:hover,
+.teamCard:hover{
+    transform: scale(1.1);
+}
+
+#imgBtn {
+    width: 20px;
+    height: 20px;
+}
+
+.courseType {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    justify-content: center;
+}
+
+.courseTitle {
+    transition: all 0.3s linear;
+}
+
+.courseTitle:hover {
+    background-color: rgb(205, 221, 243);
+}
+
+#allMemes {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    height: 550px;
+}
+
+#allMemes div {
+    width: 300px;
+    max-height: fit-content;
+    margin-right: 20px;
+}
+
+#allMemes img {
+    width: auto;
+    height: auto;
+}
+
+/*########################################### CUSTOM SCROLL BAR ########################################*/
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f4eded;
+    border-radius: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E8D6D3;
+    border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #E8D6D3;
+}
+
+/*#################################### custom details box #####################################*/
+details {
+    transition: height 0.6s ease;
+}
+
+details:not([open]) {
+    height: 5em;
+}
+
+details[open] {
+    height: 28em;
+}
+
+details>summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+details>summary::marker,
+details>summary::-webkit-details-marker {
+    display: none;
+}
