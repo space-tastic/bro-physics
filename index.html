@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="tailwindcss.css">
   <link rel="shortcut icon" href="https://www.svgrepo.com/show/288275/physics-science.svg" type="image/x-icon">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Bro Physics</title>
@@ -22,7 +22,7 @@
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button-->
           <button type="button" id="menuBtn" onclick="openMenu()"
-            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white"
             aria-controls="mobile-menu" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 34 24"
@@ -231,7 +231,8 @@
     ####################################  FOOTER  ############################################
     ########################################################################################-->
     <footer class="text-center text-white" style="background-color: rgb(205, 221, 243);" data-aos="zoom-in" data-aos-duration="1500">
-      <div class="container pt-9">
+
+      <div class="container pt-9" style="margin: auto;">
         <div class="flex justify-center mb-9">
           <a href="#" class="mr-9 text-gray-800">
             <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f w-2.5" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
@@ -278,7 +279,7 @@
         </div>
       </div>
     
-      <div class="text-center text-gray-700 p-4" style="background-color: rgb(205, 221, 243);">
+      <div class="text-center text-gray-700 p-4" style="background-color: rgb(205, 221, 243);" >
         © Copyright:
         <a class="text-gray-800" href="#">Bro Physics</a>
       </div>
